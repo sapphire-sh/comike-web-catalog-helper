@@ -1,1 +1,1 @@
-export * from './CatalogService';
+export * from './CatalogService.js';

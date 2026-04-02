@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { Circle } from '../types';
-import { AppService } from './AppService';
+import { Circle } from '../types/index.js';
+import { AppService } from './AppService.js';
 
 @Controller('api/circles')
 export class AppController {

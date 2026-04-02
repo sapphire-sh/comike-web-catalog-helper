@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'csv-parse';
-import { dataDir } from '../constants';
-import type { Circle, CircleRecord } from '../types';
+import { dataDir } from '../constants/index.js';
+import type { Circle, CircleRecord } from '../types/index.js';
 
 export class CatalogService {
 	private static _circles: Circle[] = [];

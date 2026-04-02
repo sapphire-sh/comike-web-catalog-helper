@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { CatalogService } from '../services';
-import { Circle } from '../types';
+import { CatalogService } from '../services/index.js';
+import { Circle } from '../types/index.js';
 
 @Injectable()
 export class AppService {

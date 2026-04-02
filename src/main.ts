@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './App/AppModule';
-import { PORT } from './constants';
-import { CatalogService } from './services';
+import { AppModule } from './App/AppModule.js';
+import { PORT } from './constants/index.js';
+import { CatalogService } from './services/index.js';
 
 const bootstrap = async () => {
 	const s = new CatalogService();

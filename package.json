@@ -24,6 +24,7 @@
 		"url": "git+https://github.com/sapphire-sh/comike-web-catalog-helper.git"
 	},
 	"author": "sapphire",
+	"type": "module",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/sapphire-sh/comike-web-catalog-helper/issues"

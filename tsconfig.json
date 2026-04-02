@@ -1,8 +1,6 @@
 {
 	"extends": "@sapphire-sh/utils/tsconfig.esm.json",
 	"compilerOptions": {
-		"module": "commonjs",
-		"moduleResolution": "node",
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"outDir": "./dist",
