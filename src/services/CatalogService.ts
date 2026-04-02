@@ -1,8 +1,8 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import { parse } from 'csv-parse';
 import { dataDir } from '../constants';
-import { Circle, CircleRecord } from '../types';
+import type { Circle, CircleRecord } from '../types';
 
 export class CatalogService {
 	private static _circles: Circle[] = [];
@@ -61,17 +61,17 @@ export class CatalogService {
 
 	private convertCircle(record: CircleRecord): Circle {
 		return {
-			id: parseInt(record[1], 10),
+			id: Number.parseInt(record[1], 10),
 			date: record[5],
 			space: `${record[6]}${record[7]}${record[8]}`,
-			genre: parseInt(record[9], 10),
+			genre: Number.parseInt(record[9], 10),
 			circleName: record[10],
 			artistName: record[12],
 			description: `${record[13]}\n${record[16]}`,
-			category: parseInt(record[21], 10),
-			row2: parseInt(record[2], 10),
-			row3: parseInt(record[3], 10),
-			row4: parseInt(record[4], 10),
+			category: Number.parseInt(record[21], 10),
+			row2: Number.parseInt(record[2], 10),
+			row3: Number.parseInt(record[3], 10),
+			row4: Number.parseInt(record[4], 10),
 		};
 	}
 

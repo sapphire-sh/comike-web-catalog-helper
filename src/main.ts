@@ -3,7 +3,7 @@ import { AppModule } from './App/AppModule';
 import { PORT } from './constants';
 import { CatalogService } from './services';
 
-async function bootstrap() {
+const bootstrap = async () => {
 	const s = new CatalogService();
 	await s.initialize();
 
@@ -12,5 +12,5 @@ async function bootstrap() {
 		origin: 'https://webcatalog.circle.ms',
 	});
 	await app.listen(PORT);
-}
-bootstrap();
+};
+void bootstrap();

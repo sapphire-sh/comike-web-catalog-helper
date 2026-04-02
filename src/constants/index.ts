@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 
 export const rootDir = path.resolve(__dirname, '..', '..', '..');
 export const dataDir = path.resolve(rootDir, 'data');
